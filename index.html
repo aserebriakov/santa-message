@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Message from Santa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fdf6f0;
+      text-align: center;
+      padding: 40px;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #c62828;
+    }
+    button {
+      font-size: 18px;
+      padding: 12px 20px;
+      border-radius: 8px;
+      border: none;
+      background: #c62828;
+      color: white;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background: #b71c1c;
+    }
+    .message {
+      display: none;
+      margin-top: 25px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>🎅 A Message from Santa</h1>
+
+    <p>Something magical is waiting for you… ✨</p>
+
+    <button onclick="showMessage()">✨ Tap to read ✨</button>
+
+    <div class="message" id="santaMessage">
+      <p>Ho-ho-ho!</p>
+
+      <p>I was watching you closely this year,<br>
+      and I’m very proud of you 🎄✨</p>
+
+      <p>Your Christmas present is ready<br>
+      and is flying from Disney’s workshop right now!</p>
+
+      <p><strong>📦 Santa’s tracking update:</strong><br>
+      Arrival day: <strong>Saturday</strong></p>
+
+      <p>Keep an eye out — reindeer helpers are very fast 😉</p>
+
+      <p>— Santa 🎅</p>
+    </div>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("santaMessage").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
